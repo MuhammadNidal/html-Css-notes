@@ -1,0 +1,321 @@
+CSS Guide
+Introduction
+CSS (Cascading Style Sheets) is used to style and layout web pages, including design, colors, and fonts.
+
+Basic Syntax
+CSS rules consist of selectors and declarations.
+
+css
+Copy code
+selector {
+    property: value;
+}
+selector: Specifies the HTML element to be styled.
+property: Specifies the CSS property to be styled.
+value: Specifies the value of the property.
+Types of CSS
+Inline CSS
+Uses the style attribute inside HTML elements.
+
+html
+Copy code
+<p style="color: blue;">This is a blue paragraph.</p>
+Internal CSS
+Uses the <style> tag inside the <head> section of an HTML document.
+
+html
+Copy code
+<head>
+    <style>
+        p {
+            color: blue;
+        }
+    </style>
+</head>
+External CSS
+Uses an external .css file linked inside the <head> section.
+
+html
+Copy code
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+Selectors
+CSS selectors are used to "select" the HTML elements you want to style.
+
+Element Selector
+Selects all elements of a given type.
+
+css
+Copy code
+p {
+    color: blue;
+}
+Class Selector
+Selects elements with a specific class attribute. Classes are prefixed with a dot (.).
+
+css
+Copy code
+.my-class {
+    color: red;
+}
+ID Selector
+Selects an element with a specific id attribute. IDs are prefixed with a hash (#).
+
+css
+Copy code
+#my-id {
+    color: green;
+}
+Attribute Selector
+Selects elements based on an attribute or attribute value.
+
+css
+Copy code
+[type="text"] {
+    background-color: yellow;
+}
+Descendant Selector
+Selects elements that are descendants of a specified element.
+
+css
+Copy code
+div p {
+    color: purple;
+}
+Pseudo-class Selector
+Selects elements based on their state.
+
+css
+Copy code
+a:hover {
+    color: orange;
+}
+CSS Properties
+Color and Background
+css
+Copy code
+color: blue;
+background-color: lightgray;
+background-image: url('background.jpg');
+Text
+css
+Copy code
+font-family: Arial, sans-serif;
+font-size: 16px;
+font-weight: bold;
+text-align: center;
+text-decoration: underline;
+Box Model
+css
+Copy code
+width: 200px;
+height: 100px;
+margin: 10px;
+padding: 20px;
+border: 1px solid black;
+Display and Positioning
+css
+Copy code
+display: block;
+position: absolute;
+top: 50px;
+left: 100px;
+z-index: 1;
+Responsive Design
+Responsive design ensures that web pages look good on all devices. CSS media queries are used to apply different styles for different devices.
+
+css
+Copy code
+@media (max-width: 600px) {
+    body {
+        background-color: lightblue;
+    }
+
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+}
+Flexbox
+Flexbox is a layout model that allows you to design complex layouts with ease.
+
+css
+Copy code
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+Grid
+CSS Grid Layout is a two-dimensional layout system for the web.
+
+css
+Copy code
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+Example of a Responsive Web Page
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Page</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>My Responsive Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the home section of the website.</p>
+        </section>
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This section contains information about the website.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>This section contains contact information.</p>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Responsive Website</p>
+    </footer>
+</body>
+</html>
+Folder Structure for GitHub
+You can organize the notes in a structured manner by creating folders and files for each section. Here's an example of how you might organize the files:
+
+css
+Copy code
+html-css-guide/
+├── html/
+│   ├── 01-introduction.html
+│   ├── 02-elements.html
+│   ├── 03-attributes.html
+│   ├── 04-forms.html
+│   ├── 05-semantic-html.html
+│   ├── 06-html5-features.html
+│   ├── 07-example.html
+├── css/
+│   ├── 01-introduction.html
+│   ├── 02-syntax.html
+│   ├── 03-selectors.html
+│   ├── 04-properties.html
+│   ├── 05-responsive-design.html
+│   ├── 06-flexbox.html
+│   ├── 07-grid.html
+│   ├── 08-example.html
+├── index.html
+└── styles.css
+index.html
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML and CSS Guide</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>HTML and CSS Guide</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="html/01-introduction.html">HTML Introduction</a></li>
+            <li><a href="html/02-elements.html">HTML Elements</a></li>
+            <li><a href="html/03-attributes.html">HTML Attributes</a></li>
+            <li><a href="html/04-forms.html">HTML Forms</a></li>
+            <li><a href="html/05-semantic-html.html">Semantic HTML</a></li>
+            <li><a href="html/06-html5-features.html">HTML5 Features</a></li>
+            <li><a href="html/07-example.html">HTML Example</a></li>
+            <li><a href="css/01-introduction.html">CSS Introduction</a></li>
+            <li><a href="css/02-syntax.html">CSS Syntax</a></li>
+            <li><a href="css/03-selectors.html">CSS Selectors</a></li>
+            <li><a href="css/04-properties.html">CSS Properties</a></li>
+            <li><a href="css/05-responsive-design.html">Responsive Design</a></li>
+            <li><a href="css/06-flexbox.html">Flexbox</a></li>
+            <li><a href="css/07-grid.html">Grid</a></li>
+            <li><a href="css/08-example.html">CSS Example</a></li>
+        </ul>
+    </nav>
+    <footer>
+        <p>&copy; 2024 HTML and CSS Guide</p>
+    </footer>
+</body>
+</html>
+Example of a Detailed HTML Section File (html/01-introduction.html)
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Introduction</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <header>
+        <h1>HTML Introduction</h1>
+    </header>
+    <main>
+        <section>
+            <h2>What is HTML?</h2>
+            <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages. It structures content on the web.</p>
+        </section>
+        <section>
+            <h2>Basic Structure of an HTML Document</h2>
+            <p>An HTML document has a basic structure that includes a `<!DOCTYPE>` declaration, `<html>`, `<head>`, and `<body>` tags.</p>
+            <pre><code>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+</head>
+<body>
+    <!-- Content goes here -->
+</body>
+</html>
+            </code></pre>
+            <ul>
+                <li><strong>&lt;!DOCTYPE html&gt;</strong>: Declares the document type and version of HTML.</li>
+                <li><strong>&lt;html&gt;</strong>: Root element that contains all other elements.</li>
+                <li><strong>&lt;head&gt;</strong>: Contains meta-information about the document, such as the title and character set.</li>
+                <li><strong>&lt;title&gt;</strong>: Specifies the title of the document displayed in the browser tab.</li>
+                <li><strong>&lt;body&gt;</strong>: Contains the content of the document, such as text, images, and links.</li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 HTML and CSS Guide</p>
+    </footer>
+</body>
+</html>
+This structure will help you organize your HTML and CSS notes in a clear and accessible way, similar to the approach used by W3Schools. Each file in the html and css folders will cover a specific topic, making it easier for users to navigate and learn. Feel free to customize and expand the content as needed!

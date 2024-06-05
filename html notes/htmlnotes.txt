@@ -1,0 +1,201 @@
+Here's an organized structure for your HTML and CSS notes, including a detailed breakdown of each topic in separate folders or sections.
+
+HTML Guide
+Introduction
+HTML (HyperText Markup Language) is the standard markup language used to create web pages. It structures content on the web.
+
+Basic Structure of an HTML Document
+An HTML document has a basic structure that includes a <!DOCTYPE> declaration, <html>, <head>, and <body> tags.
+
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Title</title>
+</head>
+<body>
+    <!-- Content goes here -->
+</body>
+</html>
+<!DOCTYPE html>: Declares the document type and version of HTML.
+<html>: Root element that contains all other elements.
+<head>: Contains meta-information about the document, such as the title and character set.
+<title>: Specifies the title of the document displayed in the browser tab.
+<body>: Contains the content of the document, such as text, images, and links.
+Elements
+Headings
+Headings are used to create headings in the document.
+
+html
+Copy code
+<h1>This is a Heading 1</h1>
+<h2>This is a Heading 2</h2>
+<h3>This is a Heading 3</h3>
+<h4>This is a Heading 4</h4>
+<h5>This is a Heading 5</h5>
+<h6>This is a Heading 6</h6>
+Paragraphs
+Paragraphs are used to create blocks of text.
+
+html
+Copy code
+<p>This is a paragraph.</p>
+<p>This is another paragraph.</p>
+Links
+Links are used to create hyperlinks.
+
+html
+Copy code
+<a href="https://www.example.com">Visit Example</a>
+Images
+Images are used to embed images.
+
+html
+Copy code
+<img src="image.jpg" alt="Description of the image">
+Lists
+Lists are used to group related items.
+
+Unordered Lists
+Unordered lists create bulleted lists.
+
+html
+Copy code
+<ul>
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+</ul>
+Ordered Lists
+Ordered lists create numbered lists.
+
+html
+Copy code
+<ol>
+    <li>First item</li>
+    <li>Second item</li>
+    <li>Third item</li>
+</ol>
+Attributes
+Attributes provide additional information about HTML elements.
+
+html
+Copy code
+<a href="https://www.example.com" target="_blank">Visit Example</a>
+href: Specifies the URL of the link.
+target: Specifies where to open the linked document.
+Forms
+Forms are used to collect user input.
+
+html
+Copy code
+<form action="/submit-form" method="post">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name">
+    <input type="submit" value="Submit">
+</form>
+action: Specifies where to send the form data.
+method: Specifies the HTTP method (GET or POST) to use when sending form data.
+Semantic HTML
+Semantic HTML introduces meaning to the web page rather than just presentation.
+
+Examples of Semantic Elements
+<header>: Defines a header for a document or section.
+<nav>: Defines a navigation menu.
+<main>: Specifies the main content of a document.
+<article>: Defines an independent, self-contained article.
+<section>: Defines a section in a document.
+<footer>: Defines a footer for a document or section.
+HTML5 New Features
+HTML5 introduced several new elements and APIs.
+
+New Elements
+html
+Copy code
+<article></article>
+<aside></aside>
+<details></details>
+<figcaption></figcaption>
+<figure></figure>
+<footer></footer>
+<header></header>
+<main></main>
+<mark></mark>
+<nav></nav>
+<section></section>
+<summary></summary>
+<time></time>
+New Form Elements
+html
+Copy code
+<datalist></datalist>
+<output></output>
+<progress></progress>
+<meter></meter>
+New Input Types
+html
+Copy code
+<input type="email">
+<input type="url">
+<input type="number">
+<input type="range">
+<input type="date">
+<input type="time">
+<input type="datetime-local">
+<input type="month">
+<input type="week">
+<input type="color">
+APIs
+Canvas API
+Web Storage API
+Geolocation API
+Drag and Drop API
+Web Workers API
+Example of a Simple HTML Page
+html
+Copy code
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My First HTML Page</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to My Website</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="home">
+            <h2>Home Section</h2>
+            <p>This is the home section of the website.</p>
+        </section>
+        <section id="about">
+            <h2>About Section</h2>
+            <p>This section contains information about the website.</p>
+        </section>
+        <section id="contact">
+            <h2>Contact Section</h2>
+            <p>This section contains contact information.</p>
+            <form action="/submit-form" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name">
+                <input type="submit" value="Submit">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 My Website</p>
+    </footer>
+</body>
+</html>
